@@ -1,0 +1,104 @@
+@import "generic.css";
+@import "../components/sectionPrimary/sectionPrimary.css";
+@import "../components/container/container.css";
+@import "../components/mainMenu/mainMenu.css";
+@import "../components/link/link.css";
+@import "../components/productGallery/productGallery.css";
+@import "../components/profile/profile.css";
+@import "../components/footer/footer.css";
+@import "../components/contactPanel/contactPanel.css";
+@import "../components/field/field.css";
+@import "../components/header/header.css";
+@import "../components/video/video.css";
+@import "../components/sectionSecondary/sectionSecondary.css";
+@import "../components/servicesGroup/servicesGroup.css";
+@import "../components/services/services.css";
+@import "../components/button/button.css";
+@import "../components/form/form.css";
+@import "../components/formGroup/formGroup.css";
+@import "../components/input/input.css";
+@import "../components/textarea/textarea.css";
+@import "../components/buttonScroll/buttonScroll.css";
+@import "../components/pulse/pulse.css";
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/font/OpenSans/OpenSans-LightItalic.woff2") format("woff2"),
+    url("../assets/font/OpenSans/OpenSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/font/OpenSans/OpenSans-ExtraBold.woff2") format("woff2"),
+    url("../assets/font/OpenSans/OpenSans-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/font/OpenSans/OpenSans-SemiBoldItalic.woff2")
+      format("woff2"),
+    url("../assets/font/OpenSans/OpenSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/font/OpenSans/OpenSans-Bold.woff2") format("woff2"),
+    url("../assets/font/OpenSans/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/font/OpenSans/OpenSans-BoldItalic.woff2") format("woff2"),
+    url("../assets/font/OpenSans/OpenSans-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/font/OpenSans/OpenSans-Italic.woff2") format("woff2"),
+    url("../assets/font/OpenSans/OpenSans-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/font/OpenSans/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../assets/font/OpenSans/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/font/OpenSans/OpenSans-Light.woff2") format("woff2"),
+    url("../assets/font/OpenSans/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/font/OpenSans/OpenSans-Regular.woff2") format("woff2"),
+    url("../assets/font/OpenSans/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/font/OpenSans/OpenSans-ExtraBoldItalic.woff2")
+      format("woff2"),
+    url("../assets/font/OpenSans/OpenSans-ExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}

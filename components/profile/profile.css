@@ -1,0 +1,141 @@
+.profile{
+    display: flex;
+    align-items: flex-end;
+    margin: -24px;
+}
+
+@media(max-width: 1080px){
+    .profile{
+        display: block;
+    }
+}
+
+.profile-photo{
+    flex: 0 0 280px;
+    max-width: 280px;
+    padding: 24px;
+}
+
+@media(max-width: 1080px){
+    .profile-photo{
+        margin: 0 auto;
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 400px){
+    .profile-photo{
+        margin: 0 auto;
+        max-width: 75%;
+    }
+}
+
+.profile-mainImage{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.profile-passport{
+    flex: 1 1 auto;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+@media(max-width: 1080px){
+    .profile-passport{
+        margin: 0 auto;
+        max-width: 75%;
+    }
+}
+
+@media(max-width: 800px){
+    .profile-passport{
+        margin: 0 auto;
+        max-width: 90%;
+    }
+}
+
+.profile-name{
+    margin:0;
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.profile-description{
+    max-width: 544px;
+    margin-bottom: 32px;
+}
+
+.profile-socialGroup{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.profile-socialItem{
+    list-style: none;
+    display: inline-block;
+    margin-right: 32px;
+}
+
+
+.profile-socialItem:last-child{
+    margin-right: 0;
+}
+
+.profile-socialLink{
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 0.9px;
+    color: #333;
+    line-height: 20px;
+    transition: color 0.2s linear;
+    outline: none;
+}
+
+.profile-socialLink:hover{
+    color: #ff2d2d;
+}
+
+.profile-socialLink:focus{
+    color: #ff2d2d;
+}
+
+.profile-socialLink:active{
+    color: #e21212;
+}
+
+
+
+.profile-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+}
+
+.profile-galleryItem{
+    flex: 1 1 25%;
+    padding: 8px;
+    box-sizing: border-box;
+    max-width: 25%;
+}
+
+@media(max-width: 640px){
+    .profile-galleryItem{
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+}
+
+.profile-galleryImage{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}

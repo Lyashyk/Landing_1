@@ -1,0 +1,17 @@
+.contactPanel-icon{
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.contactPanel-icon:last-child{
+    margin:0;
+}
+
+.contactPanel-image{
+    transition: transform 0.2s ease-out;
+}
+
+.contactPanel-image:hover{
+    transform: rotate(30deg);
+}

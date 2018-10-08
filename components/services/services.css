@@ -1,0 +1,20 @@
+.services-icon{
+    display: inline-block;
+    margin-bottom: 24px;
+    width: 40px;
+}
+
+.services-title{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.services-image{
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -1,0 +1,151 @@
+.mainMenu {
+  background-color: #333;
+  transition: all 0.2s linear;
+}
+
+.mainMenu-mediaList {
+  display: none;
+  padding: 0 32px;
+  margin: 0 auto;
+  width: 600px;
+  font-size: 0;
+}
+
+@media (max-width: 640px) {
+  .mainMenu-mediaList {
+    display: block;
+  }
+}
+
+.mainMenu-hiddenList {
+  display: none;
+  padding: 0 32px;
+  margin: 0 auto;
+  width: 600px;
+  font-size: 0;
+}
+
+.mainMenu-list {
+  padding: 0;
+  margin: 0 auto;
+  width: 600px;
+  font-size: 0;
+}
+
+@media (max-width: 640px) {
+  .mainMenu-list {
+    display: none;
+  }
+}
+
+/* @media(max-width:640px){
+    .mainMenu-list{
+        width: 320px;
+    }
+} */
+
+.mainMenu-itemMedia {
+  list-style: none;
+  display: inline-block;
+  width: 5%;
+}
+
+.mainMenu-hiddenItem {
+  list-style: none;
+}
+
+.mainMenu-item {
+  list-style: none;
+  display: inline-block;
+  width: 25%;
+}
+
+.mainMenu-linkMedia {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  padding: 16px 0;
+}
+
+.mainMenu-imageMedia {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #ff2d2d;
+}
+
+.mainMenu-linkMedia:hover .mainMenu-imageMedia {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.mainMenu-hiddenLink {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 8px 0;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.mainMenu-hiddenLink:hover {
+  color: #ff2d2d;
+  opacity: 1;
+}
+
+.mainMenu-hiddenLink:focus {
+  color: #5c5c5c;
+}
+
+.mainMenu-hiddenLink:active {
+  color: #e21212;
+}
+
+.mainMenu-link {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 24px 0;
+  font-weight: 700;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  font-size: 14px;
+}
+
+/* @media(max-width:640px){
+    .mainMenu-link{
+        font-size: 8px;
+        padding: 16px;
+    }
+} */
+
+.mainMenu-link:hover {
+  background-color: #ff2d2d;
+  opacity: 1;
+}
+
+.mainMenu-link:focus {
+  background-color: #5c5c5c;
+}
+
+.mainMenu-link:active {
+  background-color: #e21212;
+}
+
+.mainMenu--sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  z-index: 10;
+  /* background-color: red; */
+}

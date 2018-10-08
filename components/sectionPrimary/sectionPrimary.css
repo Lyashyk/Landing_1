@@ -1,0 +1,68 @@
+.sectionPrimary {
+  padding: 80px 0;
+}
+
+.sectionPrimary-title {
+  margin: 0;
+  color: #333;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.sectionPrimary-descripton {
+  margin-bottom: 32px;
+  color: #000;
+  max-width: 480px;
+}
+
+.sectionPrimary-separator {
+  width: 120px;
+  margin-bottom: 72px;
+  background-color: #ff2d2d;
+  height: 3px;
+}
+
+.sectionPrimary-form {
+  max-width: 752px;
+  margin: 0 auto;
+}
+
+.sectionPrimary--withBorderTop {
+  border-top: 2px solid #ececec;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.sectionPrimary--centerAligned .sectionPrimary-title {
+  text-align: center;
+}
+
+.sectionPrimary--centerAligned .sectionPrimary-descripton {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.sectionPrimary--centerAligned .sectionPrimary-separator {
+  margin: 0 auto;
+  margin-bottom: 72px;
+}
+
+.sectionPrimary--highlight {
+  background-color: #f3f1de;
+}
+
+.sectionPrimary--highlight .sectionPrimary-title {
+  color: #9a958e;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.sectionPrimary--highlight .sectionPrimary-descripton {
+  color: #9a958e;
+  font-size: 16px;
+}

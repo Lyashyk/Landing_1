@@ -1,0 +1,24 @@
+.formGroup {
+  display: flex;
+  margin: -16px;
+}
+
+@media (max-width: 640px) {
+  .formGroup {
+    flex-direction: column;
+  }
+}
+
+.formGroup-narrowCol {
+  flex: 0 0 auto;
+  padding: 16px;
+}
+
+.formGroup-wideCol {
+  flex: 1 1 auto;
+  padding: 16px;
+}
+
+.formGroup--rightAligned {
+  justify-content: flex-end;
+}

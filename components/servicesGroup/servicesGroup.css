@@ -1,0 +1,18 @@
+.servicesGroup{
+    margin: -16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.servicesGroup-item{
+    box-sizing: border-box;
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding: 16px;
+    /* margin-right: 50px;
+    margin-bottom: 50px; */
+}
+
+/* .services-icon{
+    text-align: left;
+} */
