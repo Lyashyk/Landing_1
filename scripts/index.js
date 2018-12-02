@@ -1,8 +1,8 @@
-var mainMenuPosition = document
+const mainMenuPosition = document
   .getElementsByClassName("mainMenu")[0]
   .getBoundingClientRect().top;
 
-window.onscroll = function() {
+onscrollEventFunction = () => {
   if (mainMenuPosition < document.documentElement.scrollTop) {
     document
       .getElementsByClassName("mainMenu")[0]
@@ -13,3 +13,23 @@ window.onscroll = function() {
       .classList.remove("mainMenu--sticky");
   }
 };
+
+window.addEventListener("scroll", onscrollEventFunction);
+
+//----------------------------------------------------------------------------------------------------------------------
+const buttonMainMenu = document.getElementsByClassName("burgerButton")[0];
+var buttonMainMenuClickEventFunctionFlag = 1;
+
+buttonMainMenuClickEventFunction = () => {
+  if (buttonMainMenuClickEventFunctionFlag === 1) {
+    buttonMainMenu.classList.add("burgerButton--click");
+    buttonMainMenu.classList.remove("burgerButton--unclick");
+  } else {
+    buttonMainMenu.classList.remove("burgerButton--click");
+    buttonMainMenu.classList.add("burgerButton--unclick");
+  }
+  // return (buttonMainMenuClickEventFunctionFlag = -buttonMainMenuClickEventFunctionFlag);
+  buttonMainMenuClickEventFunctionFlag = -buttonMainMenuClickEventFunctionFlag;
+};
+
+buttonMainMenu.addEventListener("click", buttonMainMenuClickEventFunction);

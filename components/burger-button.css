@@ -1,0 +1,158 @@
+.burgerButton {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  height: 24px;
+  width: 36px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+}
+
+.burgerButton--click {
+}
+
+.burgerButton--unclick {
+}
+
+.burgerButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  height: 3px;
+  background-color: #b00;
+  transform-origin: left;
+}
+
+.burgerButton:hover::before {
+  background-color: #fff;
+}
+
+.burgerButton--click::before {
+  background-color: #fff;
+  animation-name: rotate;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(36deg);
+  }
+}
+
+.burgerButton--unclick::before {
+  background-color: #b00;
+  animation-name: rotateReverse;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotateReverse {
+  from {
+    transform: rotate(36deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.burgerButton::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  height: 3px;
+  background-color: #b00;
+  transform-origin: left;
+}
+
+.burgerButton:hover::after {
+  background-color: #fff;
+}
+
+.burgerButton--click::after {
+  background-color: #fff;
+  animation-name: negRotate;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes negRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-36deg);
+  }
+}
+
+.burgerButton--unclick::after {
+  background-color: #b00;
+  animation-name: negRotateReverse;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes negRotateReverse {
+  from {
+    transform: rotate(-36deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.burgerButton-span {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 3px;
+  background-color: #b00;
+  transform: translateY(-50%);
+}
+
+.burgerButton:hover .burgerButton-span {
+  background-color: #fff;
+}
+
+.burgerButton--click .burgerButton-span {
+  display: none;
+}
+
+.burgerButton--unclick .burgerButton-span {
+  display: inline-block;
+  opacity: 0;
+  animation-name: visible;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes visible {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,19 +1,21 @@
 .mainMenu {
   background-color: #333;
   transition: all 0.2s linear;
+  vertical-align: middle;
 }
 
-.mainMenu-mediaList {
+.mainMenu-burger {
   display: none;
-  padding: 0 32px;
+  padding: 16px 32px;
   margin: 0 auto;
   width: 600px;
   font-size: 0;
+  vertical-align: middle;
 }
 
 @media (max-width: 640px) {
-  .mainMenu-mediaList {
-    display: block;
+  .mainMenu-burger {
+    display: inline-block;
   }
 }
 
@@ -44,12 +46,6 @@
     }
 } */
 
-.mainMenu-itemMedia {
-  list-style: none;
-  display: inline-block;
-  width: 5%;
-}
-
 .mainMenu-hiddenItem {
   list-style: none;
 }
@@ -58,21 +54,6 @@
   list-style: none;
   display: inline-block;
   width: 25%;
-}
-
-.mainMenu-linkMedia {
-  width: 100%;
-  display: inline-block;
-  box-sizing: border-box;
-  transition: color 0.2s ease-out, background-color 0.2s ease-out;
-  padding: 16px 0;
-}
-
-.mainMenu-imageMedia {
-  width: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  background-color: #ff2d2d;
 }
 
 .mainMenu-linkMedia:hover .mainMenu-imageMedia {
