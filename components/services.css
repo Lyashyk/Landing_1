@@ -4,6 +4,12 @@
     width: 40px;
 }
 
+@media (max-width: 360px) {
+    .services-icon {
+        width: 36px;
+    }
+}
+
 .services-title{
     margin: 0;
     font-size: 20px;
@@ -13,8 +19,29 @@
     margin-bottom: 16px;
 }
 
+.services-title{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 360px) {
+    .services-title {
+        font-size: 16px;
+    }
+}
+
 .services-image{
     width: 100%;
     display: inline-block;
     vertical-align: middle;
+}
+
+@media (max-width: 360px) {
+    .services-description {
+        font-size: 10px;
+    }
 }

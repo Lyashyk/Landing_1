@@ -15,12 +15,6 @@
   border: 1px solid transparent;
 }
 
-@media (max-width: 640px) {
-  .experement {
-    display: none;
-  }
-}
-
 @keyframes experement {
   10% {
     transform: scale(1.2);
@@ -57,4 +51,10 @@
   height: 4px;
   width: 20px;
   transform: translate(1px, 6px) rotate(-50deg);
+}
+
+@media (max-width: 640px) {
+  .buttonScroll {
+    display: none;
+  }
 }

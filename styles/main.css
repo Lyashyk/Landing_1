@@ -19,8 +19,9 @@
 @import "../components/input.css";
 @import "../components/textarea.css";
 @import "../components/button-scroll.css";
-@import "../components/pulse.css";
+@import "../components/wave.css";
 @import "../components/burger-button.css";
+@import "../components/video.css";
 
 @font-face {
   font-family: "OpenSans";

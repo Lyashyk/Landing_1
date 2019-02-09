@@ -14,13 +14,6 @@
     outline: none;
 }
 
-@media (max-width: 360px){
-    .link{
-        padding: 18px 80px;
-        font-size: 16px;
-    }
-}
-
 .link--round{
     border: 1px solid #ff2d2d;
     background-color: #fff;
@@ -58,3 +51,4 @@
     border: 1px solid #e21212;
     background-color: #e21212;
 }
+
