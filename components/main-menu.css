@@ -1,14 +1,17 @@
 .mainMenu {
+  position: relative;
   background-color: #333;
   transition: all 0.2s linear;
   vertical-align: middle;
 }
 
+.mainMenu--visibleList .mainMenu-hiddenList {
+  display: block;
+}
+
 .mainMenu-burger {
   display: none;
   padding: 16px 32px;
-  margin: 0 auto;
-  width: 600px;
   font-size: 0;
   vertical-align: middle;
 }
@@ -21,10 +24,57 @@
 
 .mainMenu-hiddenList {
   display: none;
-  padding: 0 32px;
-  margin: 0 auto;
-  width: 600px;
+  background-color: #333;
+  position: absolute;
+  top: 56px;
+  padding: 0;
+  width: 160px;
   font-size: 0;
+  opacity: 0.9;
+  border: 1px solid #333;
+}
+
+.mainMenu-hiddenItem {
+  text-align: center;
+  transition: background-color linear 0.2s;
+}
+
+.mainMenu-hiddenItem:hover {
+  background-color: #f6f2f2;
+}
+
+.mainMenu-hiddenItem:focus {
+  background-color: #f6f2f2;
+}
+
+.mainMenu-hiddenItem:active {
+  background-color:#f6f2f2; 
+}
+
+.mainMenu-hiddenLink {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 8px 0;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color linear 0.2s;
+}
+
+.mainMenu-hiddenLink:hover {
+  color: #ff2d2d;
+  opacity: 1;
+}
+
+.mainMenu-hiddenLink:focus {
+  color: #5c5c5c;
+}
+
+.mainMenu-hiddenLink:active {
+  color: #e21212;
 }
 
 .mainMenu-list {
@@ -46,9 +96,7 @@
     }
 } */
 
-.mainMenu-hiddenItem {
-  list-style: none;
-}
+
 
 .mainMenu-item {
   list-style: none;
@@ -61,17 +109,7 @@
   cursor: pointer;
 }
 
-.mainMenu-hiddenLink {
-  width: 100%;
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 8px 0;
-  color: #e0e0e0;
-  text-transform: uppercase;
-  outline: none;
-  text-decoration: none;
-  font-size: 14px;
-}
+
 
 .mainMenu-hiddenLink:hover {
   color: #ff2d2d;
